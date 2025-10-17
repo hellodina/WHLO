@@ -1,10 +1,10 @@
-WHLO - We Have Lift Off 🚀
+# WHLO - We Have Lift Off 🚀
 
 WHLO is a full-stack application designed to help you turn your ambitious goals into actionable missions. Born from the idea that planning should be inspiring, WHLO provides a clear, structured system to take your ideas from imagination to launch.
 
 This project was built as part of a hands-on exploration into modern, full-stack web development, combining a beautiful user interface with a robust backend and secure authentication.
 
-Core Features
+## Core Features
 
 Mission Management (CRUD): Create, read, update, and delete your high-level "Missions."
 
@@ -14,7 +14,7 @@ Secure Authentication: Magic link sign-in powered by NextAuth.js ensures each us
 
 Responsive Design: A clean, minimalist interface that works beautifully on desktop and mobile.
 
-The WHLO Method
+## The WHLO Method
 
 The application is built around a simple, three-step philosophy:
 
@@ -24,7 +24,7 @@ Plan: Break down your mission into clear, daily action items. No long-term, far-
 
 Lift Off!: Take the first steps now with a clear daily dashboard. Your mission begins today.
 
-Tech Stack
+## Tech Stack
 
 This project was built with a modern, full-stack toolkit:
 
@@ -42,7 +42,7 @@ Database: PostgreSQL (hosted on Neon)
 
 Authentication: NextAuth.js
 
-Getting Started
+## Getting Started
 
 To run this project locally, follow these steps:
 
@@ -62,7 +62,7 @@ Create a new file named .env in the root of your project and add your database c
 
 DATABASE_URL="postgresql://..."
 AUTH_SECRET="your-super-secret-auth-secret"
-# Add any other variables for your email provider if setting up magic links
+## Add any other variables for your email provider if setting up magic links
 
 
 4. Push the database schema:
