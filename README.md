@@ -14,12 +14,12 @@ Take the first steps now with a clear daily dashboard. Your mission begins today
 
 ## Getting Started
 
-To run this project locally, follow these steps:Clone the repository:git clone [https://github.com/hellodina/WHLO.git](https://github.com/hellodina/WHLO.git)
-cd WHLO
-Install dependencies:npm install
-Set up your environment variables:Create a new file named .env in the root of your project.Add the necessary variables for your database connection and authentication providers. You'll need to get your connection string from Neon.DATABASE_URL="postgresql://..."
-AUTH_SECRET="your-super-secret-auth-secret"
+To run this project locally, follow these steps:Clone the repository:git clone [https://github.com/hellodina/WHLO.git](https://github.com/hellodina/WHLO.git) <br>
+cd WHLO  <br>
+Install dependencies:npm install  <br>
+Set up your environment variables:Create a new file named .env in the root of your project.Add the necessary variables for your database connection and authentication providers. You'll need to get your connection string from Neon.DATABASE_URL="postgresql://..."  <br>
+AUTH_SECRET="your-super-secret-auth-secret" <br> 
 ### Add any other variables for your email provider if setting up magic links
-Push the database schema:This command will sync your prisma/schema.prisma file with your Neon database, creating the necessary tables.npx prisma db push
-Run the development server:npm run dev
+Push the database schema:This command will sync your prisma/schema.prisma file with your Neon database, creating the necessary tables.npx prisma db push  <br>
+Run the development server:npm run dev  <br>
 Open http://localhost:3000 with your browser to see the result.
