@@ -1,41 +1,11 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WHLO - We Have Lift Off 🚀
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# WHLO
-WHLO Mission Dashboard
->>>>>>> de95f900013aca66b677f6ad92c3a5ddb6b2ad3c
+WHLO is a full-stack application designed to help you turn your ambitious goals into actionable missions. Born from the idea that planning should be inspiring, WHLO provides a clear, structured system to take your ideas from imagination to launch.This project was built as part of a hands-on exploration into modern, full-stack web development, combining a beautiful user interface with a robust backend and secure authentication.Core FeaturesMission Management (CRUD): Create, read, update, and delete your high-level "Missions."Action Item Tracking: Break down each Mission into small, manageable tasks and track their completion.Secure Authentication: Magic link sign-in powered by NextAuth.js ensures each user's data is private and secure.Responsive Design: A clean, minimalist interface that works beautifully on desktop and mobile.The WHLO MethodThe application is built around a simple, three-step philosophy:Imagine: Define your ultimate goals and start with the end in mind. This is your personal mission control.Plan: Break down your mission into clear, daily action items. No long-term, far-off goals—just the next step.Lift Off!: Take the first steps now with a clear daily dashboard. Your mission begins today.Tech StackThis project was built with a modern, full-stack toolkit:Framework: Next.js (with App Router)Language: TypeScriptStyling: Tailwind CSSUI Components: Shadcn/uiDatabase ORM: PrismaDatabase: PostgreSQL (hosted on Neon)Authentication: NextAuth.jsGetting StartedTo run this project locally, follow these steps:Clone the repository:git clone [https://github.com/hellodina/WHLO.git](https://github.com/hellodina/WHLO.git)
+cd WHLO
+Install dependencies:npm install
+Set up your environment variables:Create a new file named .env in the root of your project.Add the necessary variables for your database connection and authentication providers. You'll need to get your connection string from Neon.DATABASE_URL="postgresql://..."
+AUTH_SECRET="your-super-secret-auth-secret"
+# Add any other variables for your email provider if setting up magic links
+Push the database schema:This command will sync your prisma/schema.prisma file with your Neon database, creating the necessary tables.npx prisma db push
+Run the development server:npm run dev
+Open http://localhost:3000 with your browser to see the result.
