@@ -6,6 +6,8 @@ import { prisma } from "@/lib/prisma"
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   // adapter: PrismaAdapter(prisma), // Disabled for credentials provider
+  trustHost: true, // Required for Vercel deployment
+  secret: process.env.NEXTAUTH_SECRET || "fallback-secret-for-development",
   providers: [
     // Development provider for testing without email setup
     CredentialsProvider({

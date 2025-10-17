@@ -58,11 +58,26 @@ npm install
 
 
 3. Set up your environment variables:
-Create a new file named .env in the root of your project and add your database connection string from Neon and a secret for authentication.
 
+**For Local Development:**
+Create a new file named .env in the root of your project and add:
+
+```
 DATABASE_URL="postgresql://..."
-AUTH_SECRET="your-super-secret-auth-secret"
-## Add any other variables for your email provider if setting up magic links
+NEXTAUTH_SECRET="your-super-secret-auth-secret"
+NEXTAUTH_URL="http://localhost:3000"
+```
+
+**For Vercel Deployment:**
+In your Vercel project settings, add these environment variables:
+
+```
+DATABASE_URL=your-neon-database-url
+NEXTAUTH_SECRET=your-super-secret-auth-secret
+NEXTAUTH_URL=https://your-app-name.vercel.app
+```
+
+**Important:** Make sure to use the same NEXTAUTH_SECRET in both local and production environments.
 
 
 4. Push the database schema:
