@@ -18,8 +18,6 @@ export async function PUT(
     const body = await request.json()
     const { title, description, status } = body
 
-    console.log('Update mission request:', { missionId, title, description, status })
-
     // Validate required fields
     if (!title || title.trim().length === 0) {
       return NextResponse.json(
@@ -57,12 +55,8 @@ export async function PUT(
     return NextResponse.json(updatedMission)
   } catch (error) {
     console.error('Error updating mission:', error)
-    console.error('Error details:', {
-      message: error instanceof Error ? error.message : 'Unknown error',
-      stack: error instanceof Error ? error.stack : undefined
-    })
     return NextResponse.json(
-      { error: 'Internal server error', details: error instanceof Error ? error.message : 'Unknown error' },
+      { error: 'Internal server error' },
       { status: 500 }
     )
   }

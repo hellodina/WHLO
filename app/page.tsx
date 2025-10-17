@@ -74,14 +74,12 @@ export default function Home() {
 
       if (!response.ok) {
         const errorData = await response.json().catch(() => ({}));
-        console.error('API Error:', errorData);
         throw new Error(errorData.error || `Failed to ${editingMission ? 'update' : 'create'} mission`);
       }
 
       // Refresh missions list
       await fetchMissions();
     } catch (error) {
-      console.error(`Error ${editingMission ? 'updating' : 'creating'} mission:`, error);
       const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
       alert(`Failed to ${editingMission ? 'update' : 'create'} mission: ${errorMessage}`);
     } finally {

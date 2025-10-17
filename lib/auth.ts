@@ -27,7 +27,7 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
             user = await prisma.user.create({
               data: {
                 email: credentials.email as string,
-                name: credentials.email.split('@')[0],
+                name: (credentials.email as string).split('@')[0],
               }
             });
           }
